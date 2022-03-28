@@ -1,0 +1,14 @@
+list1 = [] 
+list1 = [int(num) for num in input("Enter the list num : ").split()]
+print(list1)
+list2=[]
+for i in list1:
+    n_i=list1.count(i) 
+    list2.append(n_i)
+
+maximum=max(list2)  
+for j in list1:
+    n_j=list1.count(j)
+    if n_j==maximum:
+        print(j)
+        break
